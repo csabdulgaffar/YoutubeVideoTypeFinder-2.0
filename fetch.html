@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        section {
+            width: 95%;
+            margin: auto;
+            background-color: #ddd;
+        }
+
+        .title {
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title1 {
+            background-color: rgb(160, 151, 151);
+            padding: 20px 100px;
+            font-family: poppins;
+        }
+
+        .colon {
+
+            background-color: rgb(160, 151, 151);
+            padding: 20px 0;
+            padding-right: 10px;
+
+            font-family: poppins;
+        }
+
+        .titleYes {
+            background-color: rgb(32, 255, 125);
+            padding: 20px 100px;
+            font-family: poppins;
+        }
+
+        .titleNo {
+            background-color: rgb(228, 35, 10);
+            padding: 20px 100px;
+            font-family: poppins;
+        }
+
+        .video-details {
+            font-family: roboto;
+            margin-top: 15px;
+            padding: 10px;
+            text-align: center;
+            padding: 2px 100px;
+        }
+
+        .video-details h1 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .video-details p {
+            font-size: 1.2rem;
+        }
+
+        .video-info-heading {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5rem !important;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">Youtube<br>
+                    Translator</a>
+            </div>
+            <ul>
+
+                <li><a href="typefinder.html">Find YT Video Type</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="debuggers.html">Team Debuggers</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </ul>
+
+        </div>
+
+    </div>
+    <section>
+        <div class="title">
+            <div class="title1">
+                <h1>Is the video educational </h1>
+            </div>
+            <div class="colon">
+                <h1>:</h1>
+            </div>
+            <div class="titleYes">
+                <h1>Yes</h1>
+            </div>
+            <div class="titleNo">
+                <h1>No</h1>
+            </div>
+        </div>
+
+        <div class="video-details">
+            <h1 class="video-info-heading">Video Overall Info</h1>
+            <div class=" video-deta ils video-title">
+                <h1>Title of the Video </h1>
+                <p>
+                    <%= videoTitle %>
+                </p>
+            </div>
+            <hr>
+            <div class="video-details video-thumbnail">
+                <h1>Video Thumbnail</h1>
+                <img src="<%=videoThumbnail%>" alt="video thumbnail">
+                
+
+                <!-- <%= videoThumbnail %> -->
+            </div>
+            <hr>
+            <div class="video-details channel-name">
+                <h1>Channel Title</h1>
+                <p>
+                    <%= channelName %>
+                </p>
+            </div>
+            <hr>
+            <div class=" video-details channel-description">
+                <h1>Video Description</h1>
+                <p>
+                    <%= videoDescription %>
+                </p>
+            </div>
+            <hr>
+            <div class="video-details channel-tags">
+                <h1>Video Tags</h1>
+                <p>
+                    <%= videoTags %>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <ul>
+                <li><a href="debuggers.html">@2022 : Team Debuggers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Terms of serivce</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
